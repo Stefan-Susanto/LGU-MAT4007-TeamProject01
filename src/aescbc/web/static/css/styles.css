@@ -33,6 +33,11 @@ body {
   gap: 0.4rem;
 }
 
+.hero-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
 h1 {
   margin: 0;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
@@ -113,6 +118,11 @@ button {
 
 button:hover {
   background: var(--accent-strong);
+}
+
+.hero-actions button[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 .status {

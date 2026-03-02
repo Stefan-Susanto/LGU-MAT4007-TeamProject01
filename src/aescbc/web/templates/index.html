@@ -59,44 +59,6 @@
             </div>
           </section>
 
-          <section class="card">
-            <h3>Encrypt File</h3>
-            <form id="file-encrypt-form">
-              <label for="file-enc-input">File</label>
-              <input id="file-enc-input" type="file" required />
-
-              <label for="file-enc-key">Key (hex, 16/24/32 bytes)</label>
-              <div class="secret-field">
-                <input
-                  id="file-enc-key"
-                  type="password"
-                  required
-                  autocomplete="off"
-                  spellcheck="false"
-                />
-                <button type="button" class="toggle-secret" data-target="file-enc-key">Show</button>
-              </div>
-
-              <label for="file-enc-iv">IV (hex, optional 16 bytes)</label>
-              <div class="secret-field">
-                <input
-                  id="file-enc-iv"
-                  type="password"
-                  placeholder="leave empty for random IV"
-                  autocomplete="off"
-                  spellcheck="false"
-                />
-                <button type="button" class="toggle-secret" data-target="file-enc-iv">Show</button>
-              </div>
-
-              <button type="submit">Encrypt File</button>
-            </form>
-
-            <div class="result">
-              <label for="file-enc-meta">Detected Metadata</label>
-              <textarea id="file-enc-meta" rows="4" readonly></textarea>
-            </div>
-          </section>
         </div>
 
         <div class="lane">
@@ -135,32 +97,6 @@
             </div>
           </section>
 
-          <section class="card">
-            <h3>Decrypt File</h3>
-            <form id="file-decrypt-form">
-              <label for="file-dec-input">Encrypted File (.enc)</label>
-              <input id="file-dec-input" type="file" required />
-
-              <label for="file-dec-key">Key (hex, 16/24/32 bytes)</label>
-              <div class="secret-field">
-                <input
-                  id="file-dec-key"
-                  type="password"
-                  required
-                  autocomplete="off"
-                  spellcheck="false"
-                />
-                <button type="button" class="toggle-secret" data-target="file-dec-key">Show</button>
-              </div>
-
-              <button type="submit">Decrypt File</button>
-            </form>
-
-            <div class="result">
-              <label for="file-dec-meta">Recovered Metadata</label>
-              <textarea id="file-dec-meta" rows="4" readonly></textarea>
-            </div>
-          </section>
         </div>
       </section>
 
